@@ -9,5 +9,5 @@ spec:
   - port: 3306
     protocol: TCP
   selector:
-    app: drupal-mysql
+    run: mysql
   type: ClusterIP
