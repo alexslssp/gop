@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2020-01-07T18:10:30Z"
+  name: drupal-service2
+  namespace: default
+spec:
+  clusterIP: 
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 30096
+  selector:
+    app: drupal
+  type: ClusterIP
