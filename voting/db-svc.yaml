@@ -4,6 +4,8 @@ metadata:
   name: db
   namespace: vote
 spec:
+  selector:
+    app: db-deployment
   ports:
     - protocol: TCP
       port: 5432
